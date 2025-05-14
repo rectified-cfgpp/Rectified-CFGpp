@@ -2,36 +2,22 @@
 
 [![ArXiv](https://img.shields.io/badge/arXiv-Soon-blue)](https://arxiv.org/abs/xxxxxxx) [![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
 
-A **training-free**, **geometry-aware** guidance scheme for flow-based text-to-image (T2I) models. Rectified-CFG++ replaces the naïve extrapolation of classifier-free guidance (CFG) with a predictor–corrector integrator that stays on the learned data manifold, eliminating oversaturation and structural artifacts while improving prompt alignment and sampling efficiency.
-
----
-
-## 📖 Table of Contents
-
-1. [Features](#-features)  
-2. [Installation](#-installation)  
-3. [Quick Start](#-quick-start)  
-4. [API Usage](#-api-usage)  
-5. [Configuration](#-configuration)  
-6. [Examples](#-examples)  
-7. [Benchmarks & Results](#-benchmarks--results)  
-8. [Citation](#-citation)  
-9. [License](#-license)
+A **training-free**, **geometry-aware** guidance scheme for flow-based text-to-image (T2I) models. Rectified-CFG++ replaces the naïve extrapolation of classifier-free guidance (CFG) with a predictor–corrector integrator that stays on the learned data manifold, eliminating structural artifacts while improving prompt alignment and over generation quality.
 
 ---
 
 ## ✨ Features
 
 - **On-Manifold Sampling**  
-  Predictor–corrector updates keep trajectories within a bounded tubular neighborhood of the data manifold.
+  Predictor–corrector updates keep trajectories on the data manifold.
 - **Training-Free**  
   Drop-in replacement for standard CFG—no additional training or fine-tuning required.
 - **Model-Agnostic**  
-  Works with any transformer-based rectified-flow T2I backbone (e.g., Flux, SD3/3.5, Lumina-Next).
+  Works with any transformer-based rectified-flow T2I backbone (e.g., Flux, SD3/3.5, Lumina).
 - **Stable Across Scales**  
   Maintains visual fidelity and prompt alignment even at high guidance strengths.
 - **Efficient**  
-  Achieves state-of-the-art FID and CLIP-Score with 20–30% fewer function evaluations.
+  Achieves state-of-the-art FID and CLIP-Score.
 
 ---
 
@@ -67,11 +53,11 @@ Customize the generation process with additional parameters:
 python demo.py \
     --prompt "A cyberpunk city at night" \
     --guidance_scale 4.5 \
-    --num_steps 35 \
-    --width 768 \
-    --height 768 \
+    --num_steps 28 \
+    --width 1024 \
+    --height 1024 \
     --output_dir "./my_generations" \
-    --seed 123
+    --seed 99
 ```
 
 ### Available Parameters
