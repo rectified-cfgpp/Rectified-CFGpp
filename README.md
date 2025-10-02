@@ -2,7 +2,8 @@
 
 [![ArXiv](https://img.shields.io/badge/arXiv-Soon-blue)](https://arxiv.org/abs/xxxxxxx) [![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
 
-Authors: Shreshth Saini, Shashank Gupta, Alan C. Bovik
+Authors: Shreshth Saini, Shashank Gupta, Alan C. Bovik 
+
 The University of Texas at Austin
 
 Project Webpage: https://shreshthsaini.github.io/Rectified-CFGpp/
