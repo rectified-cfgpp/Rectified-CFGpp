@@ -2,6 +2,11 @@
 
 [![ArXiv](https://img.shields.io/badge/arXiv-Soon-blue)](https://arxiv.org/abs/xxxxxxx) [![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
 
+Authors: Shreshth Saini, Shashank Gupta, Alan C. Bovik
+The University of Texas at Austin
+
+Project Webpage: https://shreshthsaini.github.io/Rectified-CFGpp/
+
 A **training-free**, **geometry-aware** guidance scheme for flow-based text-to-image (T2I) models. Rectified-CFG++ replaces the naïve extrapolation of classifier-free guidance (CFG) with a predictor–corrector integrator that stays on the learned data manifold, eliminating structural artifacts while improving prompt alignment and over generation quality.
 
 ---
